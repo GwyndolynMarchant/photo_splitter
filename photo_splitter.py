@@ -13,10 +13,9 @@ Note the following packages are required:
  python-imaging-tk
 '''
 
-import PIL
-import Image
-import ImageTk
-import Tkinter
+from PIL import Image
+from PIL import ImageTk
+import tkinter as Tkinter
 import sys
 import os
 
@@ -133,7 +132,7 @@ class Application(Tkinter.Frame):
         
 
         self.image = Image.open(self.filename)
-        print self.image.size
+        print(self.image.size)
         self.image_rect = Rect(self.image.size)
         
         self.image_thumb=self.image.copy()
@@ -156,7 +155,7 @@ class Application(Tkinter.Frame):
         for croparea in self.crop_rects:
             cropcount+=1
             f = self.newfilename(cropcount)
-            print f,croparea
+            print(f,croparea)
             self.crop(croparea,f)
         self.quit()
 
@@ -228,7 +227,7 @@ def main():
     if len(sys.argv)>1:
         filename=sys.argv[1]
     else:
-        print "Need a filename"
+        print("Need a filename")
         return
         
     app = Application(filename=filename)                    

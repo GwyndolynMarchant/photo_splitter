@@ -2,7 +2,7 @@ What is it
 ==========
 
 This is a copy of Greg Lavino's awesome `photo_splitter.py`, with some
-minor adjustments by myself.
+minor adjustments by Daniel Nouri, updated to work with Python 3.10 by me.
 
 Greg published his original code in a `ubunutuforums.org thread
 <http://ubuntuforums.org/showthread.php?t=1429439&p=8975597#post8975597>`_.
